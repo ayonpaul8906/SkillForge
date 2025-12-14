@@ -6,11 +6,11 @@ import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import CourseCard from './components/CourseCard';
 import SkeletonCard from './components/SkeletonCard';
-import Mentors from './components/Mentors';
-import Cart from './components/Cart';
-import Profile from './components/Profile';
+import Mentors from './pages/Mentors';
+import Cart from './pages/Cart';
+import Profile from './pages/Profile';
 import Login from './components/Login';         // New
-import LandingPage from './components/LandingPage'; // New
+import LandingPage from './pages/LandingPage'; // New
 
 import { courses } from './lib/data'; 
 import './App.css';

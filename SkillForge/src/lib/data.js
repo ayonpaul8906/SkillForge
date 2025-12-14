@@ -26,7 +26,7 @@ export const courses = [
     duration: "24h 30m",
     price: 64.99,
     oldPrice: 89.99,
-    image: "https://images.unsplash.com/photo-1586717791821-3f44a5638d48?w=800&q=80",
+    image: "https://media.istockphoto.com/id/2228204306/photo/web-design-application-design-coding-develop-ux-ui-design-web-and-user-design-development.jpg?s=2048x2048&w=is&k=20&c=FA4XJHGj3uMNrl1tTFIYrN0KdjtZdO3YsLC2rnTK5h8=",
     tags: ["Popular"]
   },
   {

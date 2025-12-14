@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
-import Hero from './Hero';
-import CourseCard from './CourseCard';
-import SkeletonCard from './SkeletonCard';
+import Hero from '../components/Hero';
+import CourseCard from '../components/CourseCard';
+import SkeletonCard from '../components/SkeletonCard';
 import { courses } from '../data'; // Adjust path if needed
 
 const Explore = ({ searchTerm, addToCart }) => {

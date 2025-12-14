@@ -1,6 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import Hero from './Hero';
+import Hero from '../components/Hero';
 import { CheckCircle } from 'lucide-react';
 
 const LandingPage = () => {
