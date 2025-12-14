@@ -1,0 +1,62 @@
+export const courses = [
+  {
+    id: 1,
+    title: "Full-Stack Web Development Bootcamp",
+    instructor: "Angela Yu",
+    role: "Senior Developer",
+    avatar: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop",
+    category: "Development",
+    rating: 4.9,
+    reviews: "12k",
+    duration: "60h 15m",
+    price: 89.99,
+    oldPrice: 199.99,
+    image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800&q=80",
+    tags: ["Bestseller", "New"]
+  },
+  {
+    id: 2,
+    title: "UI/UX Design: The Complete Guide",
+    instructor: "Gary Simon",
+    role: "Design Lead",
+    avatar: "https://images.unsplash.com/photo-1599566150163-29194dcaad36?w=100&h=100&fit=crop",
+    category: "Design",
+    rating: 4.8,
+    reviews: "8.5k",
+    duration: "24h 30m",
+    price: 64.99,
+    oldPrice: 89.99,
+    image: "https://images.unsplash.com/photo-1586717791821-3f44a5638d48?w=800&q=80",
+    tags: ["Popular"]
+  },
+  {
+    id: 3,
+    title: "Data Science with Python & Pandas",
+    instructor: "Jose Portilla",
+    role: "Data Scientist",
+    avatar: "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=100&h=100&fit=crop",
+    category: "Data Science",
+    rating: 4.7,
+    reviews: "5k",
+    duration: "32h 00m",
+    price: 94.99,
+    oldPrice: 129.99,
+    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80",
+    tags: []
+  },
+  {
+    id: 4,
+    title: "Modern Digital Marketing Masterclass",
+    instructor: "Seth Godin",
+    role: "Marketing Guru",
+    avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop",
+    category: "Marketing",
+    rating: 4.6,
+    reviews: "15k",
+    duration: "18h 45m",
+    price: 49.99,
+    oldPrice: 79.99,
+    image: "https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?w=800&q=80",
+    tags: ["Bestseller"]
+  }
+];
