@@ -1,16 +1,111 @@
-# React + Vite
+# ⚡ SkillForge - Online Course Platform
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+![Vite](https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white)
+![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
 
-Currently, two official plugins are available:
+SkillForge is a modern, responsive single-page application (SPA) built with React. It simulates a premium online learning marketplace where users can browse courses, manage their profiles, and enroll in classes using a persistent shopping cart system.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+The project demonstrates advanced React patterns including **global state management**, **protected routing**, **custom hooks**, and **component animations**.
 
-## React Compiler
+## 🚀 Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### Core Functionality
+- **Authentication System**: Secure-feel login/logout flow with `localStorage` persistence.
+- **Dynamic Course Filtering**: Real-time search and category filtering (Development, Design, Marketing, etc.).
+- **Shopping Cart**: Add/remove courses with instant UI updates and toast notifications.
+- **Responsive Design**: Fully optimized for Mobile (414px) to Large Desktop (1600px).
 
-## Expanding the ESLint configuration
+### UI/UX Enhancements
+- **Skeleton Loading**: Shimmer effects while data is fetching to improve perceived performance.
+- **Glassmorphism UI**: Modern frosted glass effects on cards and navigation.
+- **Animations**: Smooth page transitions and hover effects using `framer-motion`.
+- **Toast Notifications**: Interactive feedback for user actions (e.g., "Added to Cart").
+- **API Integration**: Fetches daily inspirational quotes from external public APIs to simulate dynamic content.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ Tech Stack
+
+- **Framework**: [React](https://reactjs.org/) (via Vite)
+- **Routing**: [React Router DOM v6](https://reactrouter.com/)
+- **Styling**: Plain CSS with CSS Variables & Flexbox/Grid
+- **Icons**: [Lucide React](https://lucide.dev/)
+- **Animations**: [Framer Motion](https://www.framer.com/motion/)
+- **Notifications**: [React Hot Toast](https://react-hot-toast.com/)
+
+## 📂 Project Structure
+
+```text
+src/
+├── components/
+│   ├── Cart.jsx           # Shopping cart page logic
+│   ├── CourseCard.jsx     # Individual course item with interactions
+│   ├── Hero.jsx           # Landing page hero section with API quote
+│   ├── LandingPage.jsx    # Public marketing page
+│   ├── Login.jsx          # Authentication form
+│   ├── Mentors.jsx        # Static mentors grid page
+│   ├── Navbar.jsx         # Responsive navigation with dropdowns
+│   ├── Profile.jsx        # User settings form
+│   ├── SkeletonCard.jsx   # Loading state placeholder
+│   └── Skeleton.css       # Animations for loading states
+├── data.js                # Mock data for courses
+├── App.jsx                # Main routing and state logic
+├── App.css                # Global styles and variables
+└── main.jsx               # Entry point
+```
+
+## ⚡ Getting Started
+
+Follow these instructions to set up the project locally.
+
+### Prerequisites
+
+* **Node.js** (v14 or higher)
+* **npm** (v6 or higher)
+
+### Installation
+
+1.  **Clone the repository**
+    ```bash
+    git clone [https://github.com/yourusername/skillforge.git](https://github.com/yourusername/skillforge.git)
+    cd skillforge
+    ```
+
+2.  **Install dependencies**
+    ```bash
+    npm install
+    ```
+
+3.  **Run the development server**
+    ```bash
+    npm run dev
+    ```
+
+4.  **Open in Browser**
+    Visit `http://localhost:5173` to view the app.
+
+---
+
+## 📖 Usage Guide
+
+1.  **Landing Page**: When you first load the app, you will see the public landing page.
+2.  **Login**: Click "Get Started" or "Sign In".
+    > **Note:** Since this is a frontend demo, you can enter *any* email/password to log in.
+3.  **Dashboard**: Once logged in, you gain access to the **Explore**, **Mentors**, **Profile**, and **Cart** pages.
+4.  **Enroll**: Click "Enroll" on any course card to add it to your cart.
+5.  **Search**: Type in the search bar (e.g., "Python") to instantly filter the course grid. Press `Enter` to auto-scroll to results.
+
+---
+
+## 🔮 Future Improvements
+
+- [ ] Backend integration (Node.js/Express) for real authentication.
+- [ ] Stripe integration for actual payment processing.
+- [ ] User specific course progress tracking.
+- [ ] Dark mode toggle.
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
