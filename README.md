@@ -37,19 +37,21 @@ The project demonstrates advanced React patterns including **global state manage
 ```text
 src/
 ├── components/
-│   ├── Cart.jsx           # Shopping cart page logic
 │   ├── CourseCard.jsx     # Individual course item with interactions
 │   ├── Hero.jsx           # Landing page hero section with API quote
-│   ├── LandingPage.jsx    # Public marketing page
 │   ├── Login.jsx          # Authentication form
-│   ├── Mentors.jsx        # Static mentors grid page
 │   ├── Navbar.jsx         # Responsive navigation with dropdowns
-│   ├── Profile.jsx        # User settings form
-│   ├── SkeletonCard.jsx   # Loading state placeholder
-│   └── Skeleton.css       # Animations for loading states
-├── data.js                # Mock data for courses
-├── App.jsx                # Main routing and state logic
+│   └── SkeletonCard.jsx   # Loading state placeholder
+├── lib/
+│   └── data.js            # Mock data for courses
+├── pages/
+│   ├── Cart.jsx           # Shopping cart page logic
+│   ├── LandingPage.jsx    # Public marketing page
+│   ├── Mentors.jsx        # Static mentors grid page
+│   └── Profile.jsx        # User settings form
 ├── App.css                # Global styles and variables
+├── App.jsx                # Main routing and state logic
+├── index.css              # Base Tailwind or global resets (if used)
 └── main.jsx               # Entry point
 ```
 
