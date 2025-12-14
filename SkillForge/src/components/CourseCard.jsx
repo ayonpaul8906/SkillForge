@@ -3,11 +3,9 @@ import { Star, Heart } from 'lucide-react';
 import { motion } from 'framer-motion';
 import toast from 'react-hot-toast';
 
-// 1. Receive 'onAdd' prop here
 const CourseCard = ({ course, index, onAdd }) => {
   
   const handleEnroll = () => {
-    // 2. Call the function passed from parent
     if (onAdd) {
       onAdd(course); 
     }
@@ -62,7 +60,7 @@ const CourseCard = ({ course, index, onAdd }) => {
             <span className="current-price">${course.price}</span>
             <span className="old-price">${course.oldPrice}</span>
           </div>
-          {/* 3. Attach the click handler */}
+
           <button className="btn-outline-sm" onClick={handleEnroll}>Enroll</button>
         </div>
       </div>

@@ -9,7 +9,6 @@ const LandingPage = () => {
   return (
     <div className="landing-page">
       
-      {/* 1. Explicitly pass isAuth={false} so the "Get Started" button appears */}
       <Hero isAuth={false} />
 
       <section className="features-preview">

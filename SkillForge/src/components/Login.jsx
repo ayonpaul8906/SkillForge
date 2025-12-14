@@ -13,13 +13,12 @@ const Login = ({ setIsAuth }) => {
     e.preventDefault();
     setLoading(true);
 
-    // Simulate API Call
     setTimeout(() => {
       if (email && password) {
         setIsAuth(true);
-        localStorage.setItem('isAuth', 'true'); // Persist login
+        localStorage.setItem('isAuth', 'true');
         toast.success(`Welcome back!`);
-        navigate('/dashboard'); // Redirect to the main app
+        navigate('/dashboard'); 
       } else {
         toast.error("Please fill in all fields");
         setLoading(false);

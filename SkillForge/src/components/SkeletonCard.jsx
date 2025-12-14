@@ -1,5 +1,5 @@
 import React from 'react';
-import '../lib/Skeleton.css'; // We will create this small CSS file next
+import '../lib/Skeleton.css';
 
 const SkeletonCard = () => {
   return (

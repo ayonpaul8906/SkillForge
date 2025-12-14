@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { Search, ShoppingCart, Bell, User, Settings, LogOut, X, LogIn } from 'lucide-react';
 import { Link, NavLink, useNavigate } from 'react-router-dom';
 
-// 1. Accept isAuth and onLogout props
 const Navbar = ({ searchTerm, setSearchTerm, cartCount, isAuth, onLogout }) => {
   const [showNotifs, setShowNotifs] = useState(false);
   const [showProfileMenu, setShowProfileMenu] = useState(false);
@@ -22,8 +21,7 @@ const Navbar = ({ searchTerm, setSearchTerm, cartCount, isAuth, onLogout }) => {
             <span className="logo-icon h-12 w-12"><img src="/logo.png" alt="logo" /></span>
             <span className="logo-text">Skill<span className="highlight">Forge</span></span>
           </Link>
-          
-          {/* Only show nav links if authenticated */}
+
           {isAuth && (
             <div className="nav-links desktop-only">
               <NavLink to="/dashboard" className={({ isActive }) => isActive ? "active" : ""}>Explore</NavLink>
@@ -33,7 +31,6 @@ const Navbar = ({ searchTerm, setSearchTerm, cartCount, isAuth, onLogout }) => {
           )}
         </div>
 
-        {/* Only show Search if authenticated */}
         <div className="nav-center">
           {isAuth && (
             <div className="search-bar">
@@ -52,7 +49,6 @@ const Navbar = ({ searchTerm, setSearchTerm, cartCount, isAuth, onLogout }) => {
         <div className="nav-right">
           {isAuth ? (
             <>
-              {/* LOGGED IN VIEW */}
               <div className="relative-container">
                 <button className="icon-btn" onClick={() => setShowNotifs(!showNotifs)}>
                   <Bell size={20} />
@@ -90,7 +86,6 @@ const Navbar = ({ searchTerm, setSearchTerm, cartCount, isAuth, onLogout }) => {
                       <User size={16} /> Profile
                     </Link>
                     <hr />
-                    {/* Logout Button */}
                     <button className="dropdown-item danger" onClick={() => {
                       onLogout();
                       setShowProfileMenu(false);
@@ -102,7 +97,6 @@ const Navbar = ({ searchTerm, setSearchTerm, cartCount, isAuth, onLogout }) => {
               </div>
             </>
           ) : (
-            /* LOGGED OUT VIEW */
             <Link to="/login" className="btn-primary-sm">
               Sign In <LogIn size={16} />
             </Link>

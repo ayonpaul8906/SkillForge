@@ -1,12 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import { Sparkles, ArrowRight } from 'lucide-react';
 import { motion } from 'framer-motion';
-import { useNavigate } from 'react-router-dom'; // 1. Import useNavigate
+import { useNavigate } from 'react-router-dom'; 
 
-// 2. Accept isAuth prop to know if we are logged in
 const Hero = ({ isAuth }) => {
   const [quote, setQuote] = useState({ content: "Loading wisdom...", author: "" });
-  const navigate = useNavigate(); // 3. Initialize hook
+  const navigate = useNavigate();
 
   useEffect(() => {
     fetch(`https://dummyjson.com/quotes/random?t=${Date.now()}`)
@@ -37,15 +36,12 @@ const Hero = ({ isAuth }) => {
           Real-world projects, expert review, and career certificates.
         </p>
         
-        {/* 4. Conditional Rendering for Buttons */}
         <div className="hero-buttons">
-          {/* Only show "Get Started" if NOT logged in */}
           {!isAuth && (
             <button className="btn-primary" onClick={() => navigate('/login')}>
               Get Started <ArrowRight size={18} />
             </button>
           )}
-          {/* "View Pricing" button has been removed completely */}
         </div>
       </motion.div>
       
